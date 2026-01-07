@@ -31,7 +31,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-linear-to-b from-white to-gray-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -267,7 +267,7 @@ export default function ContactPage() {
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Horarios de atención
           </h3>
-          <div className="max-w-md mx-auto text-center p-6 bg-gradient-to-br from-emerald-50 to-blue-50 rounded-xl">
+          <div className="max-w-md mx-auto text-center p-6 bg-linear-to-br from-emerald-50 to-blue-50 rounded-xl">
             <div className="text-5xl mb-4">🕐</div>
             <h4 className="text-2xl font-bold text-gray-900 mb-2">
               Disponibles 24 horas
