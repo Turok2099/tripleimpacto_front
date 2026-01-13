@@ -164,3 +164,4 @@ function mapCategory(bondaCategory: string): Benefit["category"] {
   return categoryMap[bondaCategory] || "servicios";
 }
 
+

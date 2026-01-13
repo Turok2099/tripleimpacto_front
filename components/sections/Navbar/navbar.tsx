@@ -1,20 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  // Detectar scroll para efecto shrink
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   // Prevenir scroll cuando el menú mobile está abierto
   useEffect(() => {
@@ -27,7 +17,9 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "ONGs", href: "/ongs", icon: "🤝" },
+
     { name: "Sobre nosotros", href: "/about", icon: "ℹ️" },
+    { name: "Preguntas frecuentes", href: "/faqs", icon: "❓" },
     { name: "Contacto", href: "/contact", icon: "📞" },
   ];
 
@@ -37,31 +29,22 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-white/90 backdrop-blur-md shadow-lg py-3"
-            : "bg-transparent py-4"
-        }`}
-      >
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo + Branding */}
             <a
               href="/"
-              className="flex items-center gap-3 group transition-transform hover:scale-105"
+              className="flex items-center group transition-transform hover:scale-110"
             >
-              <div className="w-10 h-10 bg-linear-to-br from-emerald-500 to-blue-500 rounded-xl flex items-center justify-center text-xl shadow-md group-hover:shadow-lg transition-shadow">
-                💚
-              </div>
-              <div className="hidden sm:block">
-                <div className="text-gray-900 font-bold text-lg leading-tight">
-                  Club Triple Impacto
-                </div>
-                <div className="text-emerald-600 text-xs font-medium">
-                  Doná y ahorrá
-                </div>
-              </div>
+              <Image
+                src="https://res.cloudinary.com/dxbtafe9u/image/upload/v1768059717/LOGO_CLUB_TRIPLE_IMPACTO_jztcqa.png"
+                alt="Club Triple Impacto"
+                width={180}
+                height={60}
+                className="h-14 w-auto object-contain"
+                priority
+              />
             </a>
 
             {/* Links Desktop */}
@@ -247,7 +230,7 @@ export default function Navbar() {
       </div>
 
       {/* Spacer para compensar el navbar fixed */}
-      <div className={isScrolled ? "h-16" : "h-20"}></div>
+      <div className="h-20"></div>
     </>
   );
 }

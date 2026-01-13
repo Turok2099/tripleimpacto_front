@@ -62,7 +62,7 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-blue-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-linear-to-br from-emerald-50 via-white to-blue-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         {/* Logo y Header */}
         <div className="text-center mb-8">
@@ -344,7 +344,7 @@ export default function RegisterPage() {
               </div>
               <div className="relative flex justify-center text-sm">
                 <span className="px-2 bg-white text-gray-500">
-                  O registrate con
+                  O regístrate con
                 </span>
               </div>
             </div>
@@ -372,7 +372,7 @@ export default function RegisterPage() {
         {/* Login link */}
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
-            ¿Ya tenés cuenta?{" "}
+            ¿Ya tienes cuenta?{" "}
             <a
               href="/login"
               className="font-semibold text-emerald-600 hover:text-emerald-500 transition-colors"
@@ -386,7 +386,7 @@ export default function RegisterPage() {
         <div className="mt-6 bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
           <h3 className="text-sm font-semibold text-emerald-900 mb-3 flex items-center gap-2">
             <span>✨</span>
-            Al registrarte obtenés:
+            Al registrarte obtienes:
           </h3>
           <ul className="space-y-2 text-sm text-emerald-800">
             <li className="flex items-start gap-2">
@@ -422,4 +422,3 @@ export default function RegisterPage() {
     </div>
   );
 }
-

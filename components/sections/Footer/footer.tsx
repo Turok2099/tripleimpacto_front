@@ -1,14 +1,35 @@
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+} from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  // ONGs aliadas
+  // ONGs aliadas (16 ONGs en orden alfabético)
   const ongs = [
-    { name: "Cáritas Argentina", url: "#" },
+    { name: "Aldea de Luces", url: "#" },
+    { name: "Asociación Altas Capacidades Argentina", url: "#" },
+    { name: "Bibliotecas Rurales Argentinas", url: "#" },
+    { name: "Fundación Padres", url: "#" },
+    { name: "Fundación Regenerar", url: "#" },
+    { name: "Haciendo Camino", url: "#" },
+    { name: "La Guardia ONG", url: "#" },
+    { name: "Loros Parlantes", url: "#" },
+    { name: "Mamis Solidarias", url: "#" },
+    { name: "Monte Adentro", url: "#" },
+    { name: "Plato Lleno", url: "#" },
+    { name: "Proactiva", url: "#" },
+    { name: "Proyectar ONG", url: "#" },
+    { name: "Sustentabilidad sin Fronteras", url: "#" },
     { name: "Techo", url: "#" },
-    { name: "Fundación Tzedaká", url: "#" },
-    { name: "Banco de Alimentos", url: "#" },
+    { name: "Voy en Bici", url: "#" },
   ];
 
   // Links rápidos
@@ -43,9 +64,7 @@ export default function Footer() {
           {/* Columna 1: Logo y descripción */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-linear-to-br from-emerald-500 to-blue-500 rounded-xl flex items-center justify-center text-2xl">
-                💚
-              </div>
+              <div className="w-12 h-12 bg-linear-to-br from-emerald-500 to-blue-500 rounded-xl"></div>
               <div>
                 <h3 className="text-white font-bold text-lg">Club</h3>
                 <h3 className="text-emerald-400 font-bold text-lg -mt-1">
@@ -55,7 +74,7 @@ export default function Footer() {
             </div>
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">
               Transformamos tu generosidad en impacto social real y beneficios
-              exclusivos. Doná, ayudá y ahorrá.
+              exclusivos. Dona, ayuda y ahorra.
             </p>
             {/* Redes sociales */}
             <div className="flex gap-3">
@@ -103,9 +122,9 @@ export default function Footer() {
           {/* Columna 4: Contacto */}
           <div>
             <h4 className="text-white font-semibold text-lg mb-4">Contacto</h4>
-            <ul className="space-y-3 text-sm mb-6">
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-500 mt-1">📧</span>
+            <ul className="space-y-4 text-sm mb-6">
+              <li className="flex items-start gap-3">
+                <Mail className="text-emerald-500 w-6 h-6 shrink-0 mt-0.5" />
                 <a
                   href="mailto:clubtripleimpacto@gmail.com"
                   className="text-gray-400 hover:text-emerald-400 transition-colors"
@@ -113,8 +132,8 @@ export default function Footer() {
                   clubtripleimpacto@gmail.com
                 </a>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-500 mt-1">📱</span>
+              <li className="flex items-start gap-3">
+                <Phone className="text-emerald-500 w-6 h-6 shrink-0 mt-0.5" />
                 <a
                   href="https://wa.me/5491156393261"
                   target="_blank"
@@ -124,14 +143,14 @@ export default function Footer() {
                   +54 11 5639-3261 (WhatsApp)
                 </a>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-500 mt-1">📍</span>
+              <li className="flex items-start gap-3">
+                <MapPin className="text-emerald-500 w-6 h-6 shrink-0 mt-0.5" />
                 <span className="text-gray-400">
                   Caseros 1213, San Isidro, Buenos Aires
                 </span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-500 mt-1">🕐</span>
+              <li className="flex items-start gap-3">
+                <Clock className="text-emerald-500 w-6 h-6 shrink-0 mt-0.5" />
                 <span className="text-gray-400">Atención 24 horas</span>
               </li>
             </ul>

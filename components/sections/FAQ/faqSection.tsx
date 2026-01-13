@@ -1,12 +1,20 @@
 "use client";
 
 import { useState } from "react";
+import {
+  Gift,
+  Mail,
+  Clock,
+  Target,
+  DollarSign,
+  RefreshCw,
+} from "lucide-react";
 
 interface FAQItem {
   id: number;
   question: string;
   answer: string;
-  icon: string;
+  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
 }
 
 const faqs: FAQItem[] = [
@@ -15,56 +23,42 @@ const faqs: FAQItem[] = [
     question: "¿Por qué recibo descuentos por donar?",
     answer:
       "Nuestro modelo de Triple Impacto conecta tu generosidad con comercios aliados que creen en la responsabilidad social. Ellos ofrecen descuentos exclusivos como reconocimiento a tu compromiso con el cambio social. Así, tu donación genera impacto positivo y tú recibes beneficios tangibles.",
-    icon: "🎁",
+    icon: Gift,
   },
   {
     id: 2,
     question: "¿Cómo recibo mis cupones?",
     answer:
-      "Los cupones se envían automáticamente a tu correo electrónico inmediatamente después de confirmar tu donación. También podés acceder a todos tus beneficios desde tu dashboard personal en cualquier momento. Los cupones incluyen códigos únicos y condiciones de uso claras.",
-    icon: "📧",
+      "Los cupones se envían automáticamente a tu correo electrónico inmediatamente después de confirmar tu donación. También puedes acceder a todos tus beneficios desde tu dashboard personal en cualquier momento. Los cupones incluyen códigos únicos y condiciones de uso claras.",
+    icon: Mail,
   },
   {
     id: 3,
     question: "¿Qué pasa si no uso el cupón?",
     answer:
-      "No hay problema. Los cupones tienen una validez que aparece claramente indicada (generalmente de 30 a 90 días). Si no los usás, no perdés nada: tu donación ya generó el impacto social que buscabas. Los descuentos son un beneficio adicional, no una obligación.",
-    icon: "⏰",
-  },
-  {
-    id: 4,
-    question: "¿Mi donación es deducible de impuestos?",
-    answer:
-      "Sí. Todas nuestras ONGs aliadas están certificadas y habilitadas para emitir comprobantes de donación válidos para deducción de impuestos según la normativa vigente. Recibís el certificado automáticamente después de cada donación para tu declaración anual.",
-    icon: "📄",
+      "No hay problema. Los cupones tienen una validez que aparece claramente indicada (generalmente de 30 a 90 días). Si no los usas, no pierdes nada: tu donación ya generó el impacto social que buscabas. Los descuentos son un beneficio adicional, no una obligación.",
+    icon: Clock,
   },
   {
     id: 5,
     question: "¿Qué proyectos apoyo con mi donación?",
     answer:
-      "Podés elegir el proyecto específico que querés apoyar: educación, salud, vivienda, alimentación, entre otros. Cada proyecto incluye descripción detallada, objetivos y reportes de impacto. También ofrecemos la opción de que tu donación se distribuya automáticamente según las necesidades más urgentes.",
-    icon: "🎯",
+      "Puedes elegir el proyecto específico que quieres apoyar: educación, salud, vivienda, alimentación, entre otros. Cada proyecto incluye descripción detallada, objetivos y reportes de impacto. También ofrecemos la opción de que tu donación se distribuya automáticamente según las necesidades más urgentes.",
+    icon: Target,
   },
   {
     id: 6,
     question: "¿Cuál es el monto mínimo para donar?",
     answer:
-      "No hay monto mínimo. Podés donar desde $5.000 en adelante. Creemos que cada aporte cuenta y genera impacto. Los beneficios y descuentos están disponibles desde la primera donación, independientemente del monto.",
-    icon: "💰",
-  },
-  {
-    id: 7,
-    question: "¿Cómo sé que mi donación llega a destino?",
-    answer:
-      "Garantizamos 100% de transparencia. Recibís reportes mensuales con el impacto específico de tu donación: cuántas personas se beneficiaron, en qué se usó tu aporte y resultados medibles. Además, todas nuestras ONGs están auditadas por terceros independientes.",
-    icon: "🔍",
+      "Puedes donar desde $5.000 en adelante. Creemos que cada aporte cuenta y genera impacto. Los beneficios y descuentos están disponibles desde la primera donación, independientemente del monto.",
+    icon: DollarSign,
   },
   {
     id: 8,
     question: "¿Puedo cancelar mis donaciones recurrentes?",
     answer:
-      "Absolutamente. Si elegiste donar de forma recurrente (mensual), podés cancelar en cualquier momento desde tu dashboard sin penalidades ni preguntas. Tenés control total sobre tus donaciones.",
-    icon: "🔄",
+      "Absolutamente. Si elegiste donar de forma recurrente (mensual), puedes cancelar en cualquier momento desde tu dashboard sin penalidades ni preguntas. Tienes control total sobre tus donaciones.",
+    icon: RefreshCw,
   },
 ];
 
@@ -104,7 +98,12 @@ export default function FAQSection() {
                 className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200"
               >
                 <div className="flex items-center gap-4 flex-1">
-                  <span className="text-3xl shrink-0">{faq.icon}</span>
+                  <div className="shrink-0 w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
+                    <faq.icon
+                      className="w-6 h-6 text-emerald-600"
+                      strokeWidth={2}
+                    />
+                  </div>
                   <span className="font-semibold text-gray-900 text-lg pr-4">
                     {faq.question}
                   </span>
@@ -145,21 +144,19 @@ export default function FAQSection() {
         </div>
 
         {/* CTA adicional */}
-        <div className="mt-12 text-center bg-blue-50 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">
-            ¿Tenés otra pregunta?
+        <div className="mt-12 text-center bg-white rounded-2xl p-10 shadow-lg border-2 border-gray-100">
+          <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            ¿Tienes otra pregunta?
           </h3>
-          <p className="text-gray-600 mb-6">
-            Nuestro equipo está disponible para ayudarte
+          <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
+            Nuestro equipo está disponible para ayudarte en cualquier momento
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors">
-              📧 Contactar soporte
-            </button>
-            <button className="px-6 py-3 bg-white text-gray-800 font-semibold rounded-xl border-2 border-gray-200 hover:border-blue-300 transition-colors">
-              💬 Chat en vivo
-            </button>
-          </div>
+          <a
+            href="/contact"
+            className="inline-block px-8 py-4 bg-linear-to-r from-emerald-600 to-emerald-700 text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+          >
+            Ir al formulario de contacto
+          </a>
         </div>
       </div>
     </section>

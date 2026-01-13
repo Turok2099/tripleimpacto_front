@@ -39,7 +39,7 @@ export default function ContactPage() {
             Hablemos
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            ¿Tenés dudas o querés saber más? Estamos acá para ayudarte
+            ¿Tienes dudas o quieres saber más? Estamos aquí para ayudarte
           </p>
         </div>
 
@@ -114,9 +114,9 @@ export default function ContactPage() {
 
             {/* Preguntas frecuentes */}
             <div className="bg-linear-to-br from-emerald-500 to-blue-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">¿Tenés dudas rápidas?</h3>
+              <h3 className="text-2xl font-bold mb-4">¿Tienes dudas rápidas?</h3>
               <p className="text-emerald-50 mb-6">
-                Consultá nuestra sección de preguntas frecuentes antes de
+                Consulta nuestra sección de preguntas frecuentes antes de
                 escribirnos.
               </p>
               <a
@@ -131,7 +131,7 @@ export default function ContactPage() {
           {/* Formulario de contacto */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Envianos un mensaje
+              Envíanos un mensaje
             </h2>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -210,7 +210,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   className="block w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all appearance-none bg-white cursor-pointer"
                 >
-                  <option value="">Seleccioná un asunto</option>
+                  <option value="">Selecciona un asunto</option>
                   <option value="donacion">Consulta sobre donaciones</option>
                   <option value="beneficios">Consulta sobre beneficios</option>
                   <option value="ongs">Alianza con ONG</option>
@@ -236,7 +236,7 @@ export default function ContactPage() {
                   value={formData.mensaje}
                   onChange={handleChange}
                   className="block w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all resize-none"
-                  placeholder="Contanos en qué podemos ayudarte..."
+                  placeholder="Cuéntanos en qué podemos ayudarte..."
                 />
               </div>
 
@@ -251,7 +251,7 @@ export default function ContactPage() {
             </form>
 
             <p className="mt-4 text-sm text-gray-500 text-center">
-              Al enviar este formulario, aceptás nuestra{" "}
+              Al enviar este formulario, aceptas nuestra{" "}
               <a
                 href="/privacidad"
                 className="text-emerald-600 hover:text-emerald-700"

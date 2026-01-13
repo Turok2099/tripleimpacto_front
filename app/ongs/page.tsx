@@ -182,7 +182,7 @@ export default function ONGsPage() {
             ¿Tu ONG quiere unirse?
           </h2>
           <p className="text-emerald-50 mb-6 max-w-2xl mx-auto">
-            Si representás una organización sin fines de lucro y querés formar parte de nuestra red, contactanos.
+            Si representas una organización sin fines de lucro y quieres formar parte de nuestra red, contáctanos.
           </p>
           <button className="px-8 py-4 bg-white text-emerald-700 font-bold rounded-xl hover:shadow-xl transition-all">
             Contactar para alianzas
@@ -192,4 +192,5 @@ export default function ONGsPage() {
     </div>
   );
 }
+
 

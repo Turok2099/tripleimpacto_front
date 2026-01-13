@@ -1,19 +1,27 @@
 import BondaBenefitsSection from "@/components/sections/BondaBenefits/bondaBenefitsSection";
+import CouponShowcase from "@/components/sections/CouponShowcase/couponShowcase";
 import CTASection from "@/components/sections/CTA/ctaSection";
-import FAQSection from "@/components/sections/FAQ/faqSection";
+import FAQCTASection from "@/components/sections/FAQ/faqCTA";
+import FounderQuote from "@/components/sections/FounderQuote/founderQuote";
 import HeroSection from "@/components/sections/Hero/heroSection";
 import HowItWorksSection from "@/components/sections/HowItWorks/howItWorksSection";
+import PartnersSection from "@/components/sections/Partners/partnersSection";
+import SponsorsSection from "@/components/sections/Sponsors/sponsorsSection";
 import WhyDonateSection from "@/components/sections/WhyDonate/whyDonateSection";
 
 export default function HomePage() {
   return (
     <div>
       <HeroSection />
+      <FounderQuote />
       <HowItWorksSection />
+      <CouponShowcase />
+      <SponsorsSection />
       <BondaBenefitsSection />
+      <PartnersSection />
       <WhyDonateSection />
       <CTASection />
-      <FAQSection />
+      <FAQCTASection />
     </div>
   );
 }

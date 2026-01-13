@@ -168,12 +168,12 @@ export default function LoginPage() {
         {/* Sign up link */}
         <div className="text-center">
           <p className="text-sm text-gray-600">
-            ¿No tenés cuenta?{" "}
+            ¿No tienes cuenta?{" "}
             <a
               href="/registro"
               className="font-semibold text-emerald-600 hover:text-emerald-500 transition-colors"
             >
-              Registrate gratis
+              Regístrate gratis
             </a>
           </p>
         </div>
@@ -182,7 +182,7 @@ export default function LoginPage() {
         <div className="bg-emerald-50 rounded-2xl p-6 border border-emerald-100">
           <h3 className="text-sm font-semibold text-emerald-900 mb-3 flex items-center gap-2">
             <span>✨</span>
-            Al iniciar sesión podés:
+            Al iniciar sesión puedes:
           </h3>
           <ul className="space-y-2 text-sm text-emerald-800">
             <li className="flex items-start gap-2">
@@ -218,4 +218,5 @@ export default function LoginPage() {
     </div>
   );
 }
+
 

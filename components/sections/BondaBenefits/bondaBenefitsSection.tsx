@@ -156,8 +156,8 @@ export default function BondaBenefitsSection() {
             Catálogo de Beneficios Bonda
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Descuentos reales en servicios que usás todos los días. Cuanto más
-            donás, más ahorrás.
+            Descuentos reales en servicios que usas todos los días. Cuanto más
+            donas, más ahorras.
           </p>
         </div>
 
@@ -313,3 +313,4 @@ export default function BondaBenefitsSection() {
     </section>
   );
 }
+
