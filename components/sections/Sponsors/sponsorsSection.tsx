@@ -41,10 +41,7 @@ export default function SponsorsSection() {
           </h2>
           <p className="max-w-2xl mx-auto text-xl text-gray-600">
             Empresas comprometidas con el{" "}
-            <span
-              className="font-semibold"
-              style={{ color: "#16a459" }}
-            >
+            <span className="font-semibold" style={{ color: "#16a459" }}>
               Club Triple Impacto
             </span>{" "}
             que ofrecen beneficios exclusivos a nuestra comunidad
@@ -104,7 +101,7 @@ export default function SponsorsSection() {
             className="px-8 py-3 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
             style={{ backgroundColor: "#16a459" }}
           >
-            Únete como marca aliada
+            Sumate como marca aliada
           </button>
         </div>
       </div>
