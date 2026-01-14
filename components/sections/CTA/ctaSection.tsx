@@ -16,7 +16,7 @@ export default function CTASection() {
 
         {/* Título Principal */}
         <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
-          Convierte tu ayuda en{" "}
+          Conviertí tu ayuda en{" "}
           <span className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-2xl mt-2">
             impacto y beneficios
           </span>
@@ -26,7 +26,7 @@ export default function CTASection() {
         <p className="text-xl text-emerald-50 mb-10 leading-relaxed max-w-2xl mx-auto">
           Cada donación transforma vidas y te recompensa.
           <span className="block mt-2 font-semibold">
-            Dona hoy, cambia el futuro.
+            Doná hoy, cambia el futuro.Todo lo que das, vuelve multiplicado.
           </span>
         </p>
 

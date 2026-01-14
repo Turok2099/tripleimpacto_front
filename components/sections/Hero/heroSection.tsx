@@ -19,7 +19,7 @@ export default function HeroSection() {
           <div className="text-left">
             {/* Título principal */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Dona y recibe{" "}
+              Doná y recibí{" "}
               <span className="text-white">
                 <br />
                 descuentos <br />
@@ -30,8 +30,8 @@ export default function HeroSection() {
 
             {/* Subtítulo */}
             <p className="text-xl text-white mb-8 leading-relaxed">
-              Tu donación apoya proyectos sociales y te da acceso a cupones de
-              descuento.
+              Tu donación apoya proyectos sociales y ambientales y te da acceso
+              a cupones de descuento ahorrando más de lo que donás.
             </p>
 
             {/* CTAs */}

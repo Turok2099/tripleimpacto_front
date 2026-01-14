@@ -2,21 +2,21 @@ export default function HowItWorksSection() {
   const steps = [
     {
       number: "1",
-      title: "Elige el proyecto que más te importa",
+      title: "Eligí el proyecto que más te importa",
       description:
-        "ONGs verificadas y transparentes. Descubre proyectos de ONGs con impacto verdadero.",
+        "ONGs verificadas y transparentes. Descubrí proyectos de ONGs con impacto verdadero.",
     },
     {
       number: "2",
-      title: "Crea tu cuenta y haz tu donación",
+      title: "Creá tu cuenta y hacé tu donación Fácil y sin complicaciones. ",
       description:
-        "Fácil y sin complicaciones. Al instante, sin trámites. Accede a tus beneficios desde donde quieras.",
+        "Al instante, sin trámites. Accedé a tus beneficios desde donde quieras.",
     },
     {
       number: "3",
-      title: "Usa tu cuponera mientras generas impacto",
+      title: "Usá tu cuponera mientras generás impacto.",
       description:
-        "Usa tus beneficios en más de xxx comercios. Disfruta descuentos exclusivos y recuerda que cada compra ya generó un cambio positivo en la sociedad.",
+        "Usá tus beneficios en más de 2,000 comercios. Disfrutá descuentos exclusivos y recordá que cada compra ya generó un cambio positivo en la sociedad y el ambiente.",
     },
   ];
 
@@ -28,8 +28,8 @@ export default function HowItWorksSection() {
             ¿Cómo funciona?
           </h2>
           <p className="max-w-2xl mx-auto mt-4 text-xl text-gray-600 leading-relaxed">
-            En solo 3 pasos simples comienzas a generar impacto y recibir
-            beneficios
+            En solo 3 simples pasos, ya estás generando impacto positivo en la
+            sociedad y el ambiente y recibiendo beneficios por ser solidario.
           </p>
         </div>
 

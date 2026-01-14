@@ -26,12 +26,12 @@ export default function FounderQuote() {
                 Mariano Leguizamón
               </h1>
               <p className="text-gray-600 text-sm text-center">
-                Fundador, Club Triple Impacto
+                Co Fundador, Club Triple Impacto
               </p>
               <p className="text-center text-gray-700 text-base pt-6 font-normal leading-relaxed italic">
-                "Cada uno cuando compra y vende,{" "}
+                "Cada vez que compramos y vendemos,{" "}
                 <span className="text-[#16a459] font-semibold">
-                  elige el mundo en el que quiere vivir"
+                  elegimos el mundo en el que quiere vivir"
                 </span>
               </p>
 

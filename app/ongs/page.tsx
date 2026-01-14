@@ -4,30 +4,45 @@ export default function ONGsPage() {
       id: 1,
       name: "Cáritas Argentina",
       logo: "🏥",
-      description: "Organización de la Iglesia Católica dedicada a la asistencia social y el desarrollo humano integral.",
+      description:
+        "Organización de la Iglesia Católica dedicada a la asistencia social y el desarrollo humano integral.",
       focus: ["Asistencia alimentaria", "Salud", "Educación", "Vivienda"],
       beneficiaries: 450000,
       founded: 1960,
       website: "#",
-      impact: "Presencia en todo el territorio nacional con más de 3.000 centros de atención",
+      impact:
+        "Presencia en todo el territorio nacional con más de 3.000 centros de atención",
     },
     {
       id: 2,
       name: "Techo",
       logo: "🏠",
-      description: "Organización presente en Latinoamérica que busca superar la situación de pobreza en la que viven millones de personas.",
-      focus: ["Construcción de viviendas", "Desarrollo comunitario", "Educación", "Empleo"],
+      description:
+        "Organización presente en Latinoamérica que busca superar la situación de pobreza en la que viven millones de personas.",
+      focus: [
+        "Construcción de viviendas",
+        "Desarrollo comunitario",
+        "Educación",
+        "Empleo",
+      ],
       beneficiaries: 320000,
       founded: 1997,
       website: "#",
-      impact: "Más de 150.000 viviendas construidas en 19 países de América Latina",
+      impact:
+        "Más de 150.000 viviendas construidas en 19 países de América Latina",
     },
     {
       id: 3,
       name: "Fundación Tzedaká",
       logo: "🎓",
-      description: "Organización enfocada en la educación y el desarrollo de jóvenes en situación de vulnerabilidad.",
-      focus: ["Becas educativas", "Capacitación laboral", "Mentorías", "Inserción laboral"],
+      description:
+        "Organización enfocada en la educación y el desarrollo de jóvenes en situación de vulnerabilidad.",
+      focus: [
+        "Becas educativas",
+        "Capacitación laboral",
+        "Mentorías",
+        "Inserción laboral",
+      ],
       beneficiaries: 28000,
       founded: 2005,
       website: "#",
@@ -37,8 +52,14 @@ export default function ONGsPage() {
       id: 4,
       name: "Banco de Alimentos",
       logo: "🍎",
-      description: "Red nacional que lucha contra el hambre y el desperdicio de alimentos.",
-      focus: ["Seguridad alimentaria", "Rescate de alimentos", "Nutrición", "Educación alimentaria"],
+      description:
+        "Red nacional que lucha contra el hambre y el desperdicio de alimentos.",
+      focus: [
+        "Seguridad alimentaria",
+        "Rescate de alimentos",
+        "Nutrición",
+        "Educación alimentaria",
+      ],
       beneficiaries: 550000,
       founded: 2001,
       website: "#",
@@ -58,7 +79,8 @@ export default function ONGsPage() {
             ONGs Verificadas
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Trabajamos exclusivamente con organizaciones certificadas, auditadas y con trayectoria comprobada en el impacto social.
+            Trabajamos exclusivamente con organizaciones certificadas, auditadas
+            y con trayectoria comprobada en el impacto social.
           </p>
         </div>
 
@@ -178,11 +200,10 @@ export default function ONGsPage() {
 
         {/* CTA Final */}
         <div className="mt-16 text-center bg-linear-to-br from-emerald-500 to-blue-600 rounded-3xl p-12 text-white">
-          <h2 className="text-3xl font-bold mb-4">
-            ¿Tu ONG quiere unirse?
-          </h2>
+          <h2 className="text-3xl font-bold mb-4">¿Tu ONG quiere unirse?</h2>
           <p className="text-emerald-50 mb-6 max-w-2xl mx-auto">
-            Si representas una organización sin fines de lucro y quieres formar parte de nuestra red, contáctanos.
+            Si representas una organización sin fines de lucro y quieres formar
+            parte de nuestra red, contáctanos.
           </p>
           <button className="px-8 py-4 bg-white text-emerald-700 font-bold rounded-xl hover:shadow-xl transition-all">
             Contactar para alianzas
@@ -192,5 +213,3 @@ export default function ONGsPage() {
     </div>
   );
 }
-
-
