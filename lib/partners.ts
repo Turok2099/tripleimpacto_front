@@ -60,7 +60,7 @@ export const partnersData: Partner[] = [
   {
     id: 6,
     name: "LA GUARDIA ONG",
-    logo: "🛡️",
+    logo: "https://res.cloudinary.com/dxbtafe9u/image/upload/v1768407416/LOGO_C3I_ONG_LA_GUARIDA_FONDO_TRANSPARENTE_pzuhqq.png",
     description:
       "Protección de derechos de niños, niñas y adolescentes en situación de vulnerabilidad social.",
     beneficiaries: 490,

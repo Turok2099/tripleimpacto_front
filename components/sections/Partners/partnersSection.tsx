@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { getAllPartners } from "@/lib/partners";
 import { Partner } from "@/components/sections/WhyDonate/types";
 
@@ -76,7 +77,17 @@ export default function PartnersSection() {
                     } 100%)`,
                   }}
                 >
-                  {partner.logo}
+                  {partner.logo.startsWith("http") ? (
+                    <div className="w-full h-full flex items-center justify-center bg-white p-8">
+                      <img
+                        src={partner.logo}
+                        alt={partner.name}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  ) : (
+                    partner.logo
+                  )}
                 </div>
               </div>
 
@@ -136,12 +147,13 @@ export default function PartnersSection() {
 
         {/* CTA para ver todas las ONGs */}
         <div className="text-center mt-12">
-          <button
-            className="px-8 py-3 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+          <Link
+            href="/ongs"
+            className="inline-block px-8 py-3 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
             style={{ backgroundColor: "#16a459" }}
           >
             Ver todas nuestras ONGs aliadas
-          </button>
+          </Link>
         </div>
       </div>
     </section>
